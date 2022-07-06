@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(value = "product-service" , url = "localhost:8092")
+@FeignClient(value = "product-service" , url = "https://product-service-bootcamp.azurewebsites.net")
 public interface ProductClient {
 
     @GetMapping("/bankAccounts/{id}")

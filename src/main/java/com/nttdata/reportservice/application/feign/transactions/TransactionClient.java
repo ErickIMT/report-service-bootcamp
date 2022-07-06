@@ -8,7 +8,7 @@ import reactor.core.publisher.Flux;
 
 import java.util.List;
 
-@FeignClient(value = "transaction-service", url = "localhost:8093/transactions")
+@FeignClient(value = "transaction-service", url = "https://transactions-service-bootcamp.azurewebsites.net/transactions")
 public interface TransactionClient {
 
   @GetMapping("/{id}")

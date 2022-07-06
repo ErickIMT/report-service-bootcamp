@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import reactor.core.publisher.Mono;
 
-@FeignClient(value = "customer-service", url = "localhost:8091/customers")
+@FeignClient(value = "customer-service", url = "https://customer-service-bootcamp.azurewebsites.net/customers")
 public interface CustomerClient {
 
   @GetMapping("/{id}")
